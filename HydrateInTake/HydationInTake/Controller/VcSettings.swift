@@ -21,11 +21,12 @@ class VcSettings: UIViewController {
         
         glassSizePicker.dataSource = self
         glassSizePicker.delegate = self
-
+        
         loadData()
         createNotification()
     }
     
+
     @IBAction func setGoal(_ sender: UIStepper) {
         setGoalLabel.text = "\(Int(sender.value)) glasses /day"
         GlassManager.sharedInstance.currentGoal = Float(sender.value)
@@ -45,7 +46,7 @@ class VcSettings: UIViewController {
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
             alertYesClicked()
         }))
-
+        
         self.present(alert, animated: true)
     }
     

@@ -30,6 +30,17 @@ class VcCalender: UIViewController {
         
         getDates()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadCurrentDateProgress()
+    }
+    
+    func loadCurrentDateProgress() {
+        let currentDate = Date()
+        retrieveDateData(forDate: currentDate)
+        calendar.select(currentDate) // Optionally select the current date in the calendar
+    }
 
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()

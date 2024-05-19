@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				3D9FD1F22BFA3C4D0071FB8F /* VcHome.swift */,
-				3D9FD20D2BFA45510071FB8F /* VcSettings.swift */,
 				3D9FD20F2BFA45BE0071FB8F /* VcCalender.swift */,
+				3D9FD20D2BFA45510071FB8F /* VcSettings.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
