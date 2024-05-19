@@ -23,8 +23,7 @@ Language: Swift
 Platform: iOS
 2. Data Management
 Singleton Pattern: Use a Singleton pattern for the persistence of health activity logs, ensuring a robust and consistent data management system.
-3. UI/UX Implementation
-Best Practices: Apply UI/UX best practices to create an attractive and engaging user interface.
+
 How to Use
 1. Logging Water Intake
 Open the app and use the stepper to log your water consumption. The app will update your daily intake accordingly.
